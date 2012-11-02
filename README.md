@@ -1,4 +1,4 @@
-== iStock Tutorial 5 - Testing with RSpec and Cucumber
+# iStock Tutorial 5 - Testing with RSpec and Cucumber
 
 1. Add RSpec as a dependency to your previously created gem.
 2. Add functional requirement (bdd test(s)) to gem using RSpec.
