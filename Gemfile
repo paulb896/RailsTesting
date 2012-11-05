@@ -36,3 +36,20 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# Used for user authentication
+gem 'sorcery'
+
+# Track user availability
+gem 'pauls_cool_gem'
+
+# A bunch of gems for testing
+group :test do 
+  gem "database_cleaner"
+  gem "rspec"
+  gem "rspec-rails"
+  gem "webrat"
+  gem "cucumber"
+  gem "cucumber-rails"
+  gem "capybara"
+end
