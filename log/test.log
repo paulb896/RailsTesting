@@ -146,3 +146,359 @@ Processing by UserController#schedule as HTML
   Rendered user/schedule.html.erb within layouts/application (1.8ms)
 Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:52:46 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:52:46 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:52:46 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:55:17 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:55:17 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:55:17 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:56:31 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:56:31 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:56:31 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:56:31 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:57:32 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:57:32 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:57:32 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:57:56 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:57:56 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:57:56 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:58:32 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:58:32 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:58:32 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:58:51 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:58:51 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:58:51 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 05 Nov 2012 23:59:16 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Mon, 05 Nov 2012 23:59:16 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-05 16:59:16 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.5ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 15:12:03 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 15:12:03 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 08:12:03 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 15:14:11 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 15:14:11 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 08:14:11 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 15:14:50 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 15:14:50 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 08:14:50 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.8ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 15:53:03 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 15:53:03 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 08:53:03 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (28.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 15:53:26 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 15:53:26 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 08:53:26 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:00:31 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:00:31 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:00:31 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:01:35 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:01:35 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:01:35 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:02:05 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:02:05 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:02:05 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (29.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:13:05 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:13:05 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:13:05 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:13:05 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (27.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:14:02 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:14:02 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:14:02 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:14:02 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.3ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:15:21 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:15:21 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:15:21 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:15:22 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:15:22 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:15:22 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (27.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:15:33 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:15:33 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:15:33 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:15:33 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:15:33 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:15:33 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (27.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:17:20 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:17:20 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:17:20 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:17:20 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:17:20 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:17:20 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:23:25 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:23:25 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:23:25 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:23:25 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:23:25 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:23:25 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 16:25:04 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:25:04 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:25:04 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 16:25:04 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 16:25:04 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 09:25:04 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (26.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 18:03:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 18:03:01 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 11:03:01 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 18:03:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 18:03:01 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 11:03:01 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (28.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 06 Nov 2012 18:59:57 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 18:59:57 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 11:59:57 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 06 Nov 2012 18:59:57 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Tue, 06 Nov 2012 18:59:57 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule" for 127.0.0.1 at 2012-11-06 11:59:57 -0700
+Processing by UserController#schedule as HTML
+  Rendered user/schedule.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

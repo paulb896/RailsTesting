@@ -57,5 +57,5 @@ TestingApp::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   
   root :to => 'user#index'
-  match 'user/schedule' => 'user#schedule'
+  match 'user/schedule/:username' => 'user#schedule'
 end
