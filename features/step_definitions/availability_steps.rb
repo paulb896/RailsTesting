@@ -1,21 +1,23 @@
 Given /^a user with name (.+)$/ do |name|
-  @user = User.create!(:username => name)
+  @user = User.new
+  @user.username = name
+  @user.save
 end
 
 Given /^user has no availabilty set$/ do
   #@user.
 end
 
-Given /^user is available from "(.*?)" to "(.*?)"$/ do |arg1, arg2|
-  
+Given /^user is available from "(.*?)" to "(.*?)"$/ do |start_date, end_date|
+  @user.load_schedule
+  @user.schedule_helper.make_available(start_date, end_date)
+  @user.save
 end
 
-When /^I request a user schedule$/ do
-  @response = visit '/user/schedule'
-  @pass_variable = "Stuff is here\n\n\n"
+When /^I request "(.*?)"'s schedule$/ do |username|
+  visit "/user/schedule/#{username}"
 end
 
 Then /^I should see "(.*?)"$/ do |text|
-  #puts @pass_variable
   page.should have_content(text)
 end

@@ -1,4 +1,23 @@
 
-<p>User schedule page</p>
+<h1>User schedule page</h1>
+<p><%= @user.username %></p>
 
-<p><%= @availability %></p>
+<% if @schedule.empty? %>
+  <p>User has no availability</p>
+<% else %>
+  <table>
+    <tr>
+      <th>Start</th>
+      <th>End</th>
+      <th>Status</th>
+    </tr>
+
+    <% @schedule.each do |entry| %>
+      <tr>
+        <td><%= entry.start %></td>
+        <td><%= entry.end %></td>
+        <td><%= entry.status %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
