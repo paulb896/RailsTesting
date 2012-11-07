@@ -9,14 +9,12 @@
     <tr>
       <th>Start</th>
       <th>End</th>
-      <th>Status</th>
     </tr>
 
     <% @schedule.each do |entry| %>
       <tr>
         <td><%= entry.start_date %></td>
         <td><%= entry.end_date %></td>
-        <td><%= "Active" %></td>
       </tr>
     <% end %>
   </table>

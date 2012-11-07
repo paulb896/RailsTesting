@@ -1,9 +1,8 @@
 class UserController < ApplicationController
   def index
-    #puts "Index is here"
   end
   def schedule
-    @user = User.first
+    @user = User.find(:first, :conditions => [ "username = ?", params[:username] ])
     if @user.nil?
       redirect_to root
     end

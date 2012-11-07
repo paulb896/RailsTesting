@@ -1,4 +1,4 @@
-Given /^a user with name (.+)$/ do |user_name|
+Given /^a user with name "(.+)"$/ do |user_name|
   @user = User.new
   @user.username = user_name
   @user.save
