@@ -1366,3 +1366,66 @@ ActionView::Template::Error (undefined method `each' for #<PaulsCoolGem::UserAva
   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
   [1m[36m (73.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121106192057')[0m
   [1m[35m (107.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121105200135')
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Processing by UserController#index as HTML
+  Rendered user/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 210ms (Views: 209.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (293ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Served asset /user.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:44 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/user/schedule/paul" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2012-11-07 10:25:48 -0700
+Served asset /user.js - 304 Not Modified (0ms)

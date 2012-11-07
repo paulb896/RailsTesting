@@ -5,12 +5,13 @@ Feature: Manage Availabilty
 
   Scenario: Show User Availabilty
     Given a user with name Paul
-    And user has no availabilty set
+    And "Paul" has no availabilty set
     When I request "Paul"'s schedule
     Then I should see "User has no availability"
 
   Scenario: Show User Availabilty
     Given a user with name Paul
-    And user is available from "September 1 10:00" to "September 1 11:00"
+    And "Paul" is available from "1/Nov/2012 16:19:30" to "1/Nov/2012 16:29:30"
     When I request "Paul"'s schedule
-    Then I should see "September 1 10:00 - September 1 11:00"
+    Then I should see "2012-11-01 16:19:30"
+    And I should see "2012-11-01 16:29:30"

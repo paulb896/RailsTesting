@@ -9,8 +9,8 @@ class UserController < ApplicationController
     end
 
     @schedule = @user.schedule
+    puts @schedule
     @stuff = "Hello there"
     @other_stuff = "There is a bunch of other stuff here!!"
-    @availability = "User has no availability"
   end
 end

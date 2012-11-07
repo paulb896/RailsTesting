@@ -2,7 +2,7 @@
 <h1>User schedule page</h1>
 <p><%= @user.username %></p>
 
-<% if @schedule.empty? %>
+<% if @schedule.nil? || @schedule.empty? %>
   <p>User has no availability</p>
 <% else %>
   <table>
@@ -14,9 +14,9 @@
 
     <% @schedule.each do |entry| %>
       <tr>
-        <td><%= entry.start %></td>
-        <td><%= entry.end %></td>
-        <td><%= entry.status %></td>
+        <td><%= entry.start_date %></td>
+        <td><%= entry.end_date %></td>
+        <td><%= "Active" %></td>
       </tr>
     <% end %>
   </table>

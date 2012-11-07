@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   authenticates_with_sorcery!
   has_many :user_available
+  attr_accessible :schedule_helper
 
   def schedule
     if @schedule_helper.nil?
@@ -23,12 +24,19 @@ class User < ActiveRecord::Base
   def save_schedule_to_db
     # self.user_available.empty
     # empty user availabilty in db
+    require "date"
     if !@schedule_helper.nil?
-      @schedule.availability.each do |date|
-        self.user_available.new(date.start_date, date.end_date).save
+      @schedule_helper.availability.each do |date|
+        puts date.start_date.to_datetime
+        puts date.end_date.to_datetime
+        puts "\nISTHEDATEEND"
+        new_date = self.user_available.new(:start_time => date.start_date.to_datetime, :end_time => date.end_date.to_datetime)
+        new_date.save
       end
     end 
   end
-
-  attr_accessible :schedule_helper
+  
+  def get_helper
+    return @schedule_helper
+  end
 end

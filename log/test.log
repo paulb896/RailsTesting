@@ -1002,3 +1002,958 @@ Completed 200 OK in 89ms (Views: 50.5ms | ActiveRecord: 0.3ms)
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.5ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 14:51:57 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 14:51:57 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 07:51:58 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 91ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 14:51:58 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 14:51:58 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:37:33 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:37:33 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 15:37:33 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:37:33 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.8ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:50:59 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:50:59 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 15:50:59 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:50:59 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.7ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:52:19 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:52:19 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 15:52:20 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:52:20 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:55:16 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:55:16 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 15:55:17 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:55:17 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:59:35 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:59:35 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (user_name = 'Paul') LIMIT 1[0m
+SQLite3::SQLException: no such column: user_name: SELECT  "users".* FROM "users"  WHERE (user_name = 'Paul') LIMIT 1
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:59:35 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:59:35 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 15:59:54 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:59:54 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 15:59:54 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 15:59:54 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:05:51 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:05:51 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:05:51 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:05:51 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.3ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:06:30 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:06:30 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:06:30 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:06:30 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:10:17 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:10:17 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:10:17 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:10:17 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.5ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:11:47 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:11:47 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:11:47 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:11:47 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:14:12 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:14:12 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:14:12 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:14:12 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:18:45 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:18:45 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:18:45 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:18:45 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.8ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:19:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:19:01 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:19:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:19:01 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.7ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:19:53 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:19:53 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:19:53 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:19:53 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (27.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:21:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:21:01 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:21:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:21:01 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:21:47 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:21:47 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:21:47 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:21:48 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:21:48 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:21:48 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  Rendered user/schedule.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:22:11 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:22:11 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:22:12 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:22:12 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:22:12 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:26:08 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:26:08 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:26:08 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:26:08 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:37:02 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:37:02 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:37:02 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:37:02 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:37:30 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:37:30 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:37:30 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:37:30 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:37:30 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:38:20 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:38:20 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:38:21 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:38:21 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:38:21 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:39:46 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:39:46 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:39:46 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:39:46 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:39:46 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.5ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:40:05 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:40:05 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:40:05 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:40:05 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:40:05 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 16:43:43 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:43:43 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 09:43:43 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 16:43:43 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 16:43:43 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (58.4ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:07:33 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:07:33 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:07:33 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:07:33 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:07:33 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:10:08 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:10:08 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:10:08 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:10:08 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:10:08 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:15:17 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:15:17 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:15:17 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:15:17 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:15:17 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.9ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:16:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:16:01 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:16:01 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:16:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:16:01 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.6ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:18:21 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:18:21 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:18:21 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:18:21 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:18:21 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.0ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:20:19 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:20:19 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:20:19 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:20:19 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:20:19 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:20:19 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:20:19 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:20:19 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (38.9ms)
+Completed 500 Internal Server Error in 41ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:21:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:21:01 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:21:01 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:21:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:21:01 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:21:01 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:21:01 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:21:01 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.8ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:22:00 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:22:00 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:22:01 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:22:01 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:22:01 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:22:01 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:22:01 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:22:01 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.8ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:22:48 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:22:48 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:22:48 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 75ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:22:48 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:22:48 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:22:48 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:22:48 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:22:48 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:23:06 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:23:06 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:23:06 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:23:06 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:23:06 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:23:06 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:23:06 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:23:06 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:23:54 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:23:54 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:23:55 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:23:55 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:23:55 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:23:55 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:23:55 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:23:55 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.6ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:24:41 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:24:41 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:24:42 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:24:42 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:24:42 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:24:42 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:24:42 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:24:42 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.8ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:25:02 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:25:02 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:25:03 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:25:03 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:25:03 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.0ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:25:03 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:25:03 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:25:03 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (25.3ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:30:49 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:30:49 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:30:49 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.0ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:30:49 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:30:49 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:30:49 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:30:49 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:30:49 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (24.3ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:35:09 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:35:09 UTC +00:00], ["username", "Paul"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:35:09 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 07 Nov 2012 17:35:10 UTC +00:00], ["crypted_password", nil], ["email", nil], ["salt", nil], ["updated_at", Wed, 07 Nov 2012 17:35:10 UTC +00:00], ["username", "Paul"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'Paul') LIMIT 1
+  [1m[36mUserAvailable Load (0.1ms)[0m  [1mSELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_availables" ("created_at", "end_time", "start_time", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 07 Nov 2012 17:35:10 UTC +00:00], ["end_time", Thu, 01 Nov 2012 16:29:30 UTC +00:00], ["start_time", Thu, 01 Nov 2012 16:19:30 UTC +00:00], ["status", nil], ["updated_at", Wed, 07 Nov 2012 17:35:10 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/user/schedule/Paul" for 127.0.0.1 at 2012-11-07 10:35:10 -0700
+Processing by UserController#schedule as HTML
+  Parameters: {"username"=>"Paul"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUserAvailable Load (0.1ms)[0m  SELECT "user_availables".* FROM "user_availables" WHERE "user_availables"."user_id" = 1
+  Rendered user/schedule.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
